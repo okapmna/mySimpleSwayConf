@@ -1,0 +1,93 @@
+/* Catppuccin Mocha Color Palette */
+@define-color green #a6e3a1;
+@define-color teal #94e2d5;
+@define-color sky #89dceb;
+@define-color sapphire #74c7ec;
+@define-color blue #89b4fa;
+@define-color lavender #b4befe;
+@define-color text #cdd6f4;
+@define-color subtext1 #bac2de;
+@define-color subtext0 #a6adc8;
+@define-color overlay2 #9399b2;
+@define-color overlay1 #7f849c;
+@define-color overlay0 #6c7086;
+@define-color surface2 #585b70;
+@define-color surface1 #45475a;
+@define-color surface0 #313244;
+@define-color base #1e1e2e;
+@define-color mantle #181825;
+@define-color crust #11111b;
+
+/* ===== General Styling ===== */
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 12px;
+}
+
+/* ===== Main Window ===== */
+window {
+    background-color: @base;
+    border-radius: 4px;
+    border: 2px solid @surface1;
+}
+
+/* ===== Outer Box ===== */
+#outer-box {
+    margin: 5px;
+    padding: 10px;
+    background-color: @base;
+}
+
+/* ===== Input Field ===== */
+#input {
+    background-color: @surface0;
+    color: @text;
+    padding: 4px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+#input:focus {
+    border-color: @blue;
+    outline: none;
+}
+
+/* ===== Scrollable Area & Inner Box ===== */
+#scroll {
+    margin-top: 5px;
+}
+
+#inner-box {
+    background-color: @base;
+}
+
+/* ===== List Entries ===== */
+#entry {
+    padding: 8px;
+    border-radius: 4px;
+    color: @text;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* ===== Selected Entry ===== */
+#entry:selected {
+    background-color: @blue;
+    color: @base;
+    font-weight: bold;
+}
+
+#entry:selected #text {
+    color: @base;
+}
+
+/* ===== Entry Text ===== */
+#text {
+    color: @text;
+}
+
+/* ===== Image in Entry (e.g., for icons) ===== */
+image {
+    margin-right: 10px;
+}

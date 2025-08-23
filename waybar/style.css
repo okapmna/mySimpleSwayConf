@@ -1,0 +1,175 @@
+/* Catpuccine Mocha */
+@define-color rosewater #f5e0dc;
+@define-color flamingo #f2cdcd;
+@define-color pink #f5c2e7;
+@define-color mauve #cba6f7;
+@define-color red #f38ba8;
+@define-color maroon #eba0ac;
+@define-color peach #fab387;
+@define-color yellow #f9e2af;
+@define-color green #a6e3a1;
+@define-color teal #94e2d5;
+@define-color sky #89dceb;
+@define-color sapphire #74c7ec;
+@define-color blue #89b4fa;
+@define-color lavender #b4befe;
+@define-color text #cdd6f4;
+@define-color subtext1 #bac2de;
+@define-color subtext0 #a6adc8;
+@define-color overlay2 #9399b2;
+@define-color overlay1 #7f849c;
+@define-color overlay0 #6c7086;
+@define-color surface2 #585b70;
+@define-color surface1 #45475a;
+@define-color surface0 #313244;
+@define-color base #1e1e2e;
+@define-color mantle #181825;
+@define-color crust #11111b;
+
+* {
+    border: none;
+    border-radius: 5px;
+    font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+#waybar {
+    background-color: rgba(30, 30, 46, 0.800);
+    color: @text;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#waybar.hidden {
+    opacity: 0.2;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd,
+#keyboard-state,
+
+
+
+#sway-language {
+    padding: 0 10px;
+    margin: 3px 0px;
+    color: @text;
+    background-color: @surface0;
+}
+
+#workspaces {
+    margin: 3px 3px;
+    background-color: @surface0;
+    font-weight: bold;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: @overlay1;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    background-color: @surface1;
+    color: @text;
+}
+
+#workspaces button.focused {
+    color: @base;
+    background-color: @blue;
+}
+
+#workspaces button.urgent {
+    color: @base;
+    background-color: @lavender;
+}
+
+#window {
+    font-size: 12;
+}
+
+#clock {
+    background-color: @surface1;
+}
+
+#network {
+    background-color: @teal;
+    color: @base;
+}
+
+#pulseaudio {
+    color: @sapphire;
+}
+
+#cpu {
+    color: @green;
+}
+
+#memory {
+    color: @teal;
+}
+
+#temperature {
+    color: @lavender;
+}
+
+#backlight {
+    background-color: @lavender;
+    color: @base;
+}
+
+#battery {
+    color: @base;
+    background-color: @green;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @base;
+}
+
+#battery.warning {
+    color: @base;
+    background-color: @peach;
+    /* Menggunakan lavender sebagai pengganti warna kuning/peach */
+}
+
+#battery.critical {
+    color: @base;
+    background-color: @rosewater;
+    /* Menggunakan biru sebagai pengganti warna merah */
+    animation-name: blink;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: @surface1;
+        color: @text;
+    }
+}
+
+#custom-powermenu {
+    padding: 0 10px;
+    margin: 3px 5px 3px 0;
+    color: @red;
+    background-color: @surface0;
+    transition: all 0.3s ease-in-out;
+}
+

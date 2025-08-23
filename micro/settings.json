@@ -1,0 +1,6 @@
+{
+    "lsp": {
+        "pylsp": "pylsp",
+        "pylsp-all": "pylsp"
+    }
+}
