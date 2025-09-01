@@ -231,7 +231,7 @@ gaps inner 6
 gaps outer 3
 
 exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr
-exec --no-startup-id /usr/lib/xdg-desktop-portal-gtk
+# exec --no-startup-id /usr/lib/xdg-desktop-portal-gtk
 
 set $gnome-schema org.gnome.desktop.interface
 exec gsettings set $gnome-schema gtk-theme 'Orchis-Dark-Compact'
