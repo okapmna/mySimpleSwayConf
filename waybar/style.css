@@ -35,7 +35,7 @@
 }
 
 #waybar {
-    background-color: rgba(30, 30, 46, 0.800);
+    background-color: rgba(30, 30, 46, 0.900);
     color: @text;
     transition-property: background-color;
     transition-duration: .5s;
@@ -98,7 +98,7 @@
 }
 
 #window {
-    font-size: 12;
+    font-size: 14;
 }
 
 #clock {
@@ -111,7 +111,8 @@
 }
 
 #pulseaudio {
-    color: @sapphire;
+    background-color: @blue;
+    color: @base;
 }
 
 #cpu {
