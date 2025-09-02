@@ -128,20 +128,22 @@ ttf-jetbrains-mono-nerd orchis-gtk-theme-git tela-icon-theme-git
 
 
 3. **Run install.sh**
-# 1. Clone this repository
+### 1. Clone this repository
 ```bash
 git clone https://github.com/YOUR-USERNAME/mySimpleSwayConf.git
 ```
-# 2. Navigate into the directory
+### 2. Navigate into the directory
 ```bash
 cd mySimpleSwayConf
 ```
-# 3. Make the script executable
+### 3. Make the script executable
 ```bash
 chmod +x install.sh
 ```
-# 4. Run the installation script
+### 4. Run the installation script
 ```bash
 ./install.sh
 ```
+
+
 
