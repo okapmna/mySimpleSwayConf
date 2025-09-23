@@ -237,10 +237,6 @@ set $gnome-schema org.gnome.desktop.interface
 exec gsettings set $gnome-schema gtk-theme 'Orchis-Dark-Compact'
 exec gsettings set $gnome-schema icon-theme 'Tela-dark'
 
-# Notify manager
-exec mako
-
-
 
 
 ## Run app
@@ -254,26 +250,23 @@ bindsym $mod+Shift+Print exec flameshot gui
 ## Power menu bind
 bindsym $mod+p exec ~/.config/wofi/power-menu.sh
 
+
 ## Brightness Control
-bindsym XF86MonBrightnessUp exec brightnessctl set +5% 
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%- 
+bindsym XF86MonBrightnessUp exec ~/.config/sway/scripts/brightness.sh up
+bindsym XF86MonBrightnessDown exec ~/.config/sway/scripts/brightness.sh down
 
-## Audio Contol
+## Audio Control
+# Volume up
+bindsym XF86AudioRaiseVolume exec ~/.config/sway/scripts/volume.sh up
 
-# volume up
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-
-# volume down
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+# Volume down
+bindsym XF86AudioLowerVolume exec ~/.config/sway/scripts/volume.sh down
 
 # Mute/unmute speaker/headphone
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMute exec ~/.config/sway/scripts/volume.sh mute
 
-# Mute/unmute mikrofon
+# Mute/unmute mikrofon (tidak diubah, karena skrip hanya untuk output)
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
-
-
-
 
 
 
