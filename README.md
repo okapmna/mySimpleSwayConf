@@ -60,57 +60,22 @@ These packages form the foundation of the desktop environment.
 
 ### 2. Applications & Utilities
 
-
-
-Helper applications and utilities for everyday tasks.
-
-
-
-| Package | Description |
-
-| --------------- | -------------------------------------------------- |
-
-| `foot` | A lightweight terminal emulator for Wayland. |
-
-| `kitty` | A feature-rich, GPU-accelerated terminal emulator. |
-
-| `brightnessctl` | Controls screen brightness. |
-
-| `fastfetch` | A tool for displaying system information. |
-
-| `flameshot` | Screenshot utility. |
-
-| `neovim` | Vim-based text editor. |
-
-| `micro` | A modern and easy-to-use terminal text editor. |
-
-| `swayimg` | A simple image viewer for Sway. |
+  `foot` | A lightweight terminal emulator for Wayland.
+  `kitty` | A feature-rich, GPU-accelerated terminal emulator.
+  `brightnessctl` | Controls screen brightness. 
+  `fastfetch` | A tool for displaying system information. 
+  `flameshot` | Screenshot utility. 
+  `micro` | Modern and easy-to-use terminal text editor. 
+  `swayimg` | Simple image viewer for Sway. 
 
 
 
 ### 3. Theme & Appearance
 
-
-
-The following components are used to achieve a consistent look and feel.
-
-
-
-| Type | Name |
-
-| ---------- | ------------------------ |
-
-| **Fonts** | `JetBrains Mono Nerd Font` |
-
-| **GTK** | `Orchis-Dark-Compact` |
-
-| **Icons** | `Tela-dark` |
-
-| **Colors** | `Catppuccin Mocha` (Primary color scheme) |
-
-
-
----
+**Fonts** | `JetBrains Mono Nerd Font` 
+**GTK** | `Orchis-Dark-Compact` 
+**Icons** | `Tela-dark` 
+**Colors scheme** | `Catppuccin Mocha`
 
 
 
