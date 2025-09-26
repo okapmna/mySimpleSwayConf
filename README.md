@@ -69,22 +69,22 @@ The following packages are required for this setup to work correctly.
 
 3. **Run install.sh**
 
-Clone this repository
-```bash
-git clone https://github.com/YOUR-USERNAME/mySimpleSwayConf.git
-```
-Navigate into the directory
-```bash
-cd mySimpleSwayConf
-```
-Make the script executable
-```bash
-chmod +x install.sh
-```
-Run the installation script
-```bash
-./install.sh
-```
+    Clone this repository
+    ```bash
+    git clone https://github.com/YOUR-USERNAME/mySimpleSwayConf.git
+    ```
+    Navigate into the directory
+    ```bash
+    cd mySimpleSwayConf
+    ```
+    Make the script executable
+    ```bash
+    chmod +x install.sh
+    ```
+    Run the installation script
+    ```bash
+    ./install.sh
+    ```
 
 
 
