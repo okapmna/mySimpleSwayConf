@@ -29,7 +29,7 @@
 * {
     border: none;
     border-radius: 5px;
-    font-family: "JetBrainsMono Nerd Font", FontAwesome, sans-serif;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
     font-size: 14px;
     min-height: 0;
 }
@@ -60,6 +60,7 @@
 #scratchpad,
 #mpd,
 #keyboard-state,
+#mpris,
 
 
 
@@ -172,5 +173,25 @@
     color: @red;
     background-color: @surface0;
     transition: all 0.3s ease-in-out;
+}
+
+
+#mpris {
+    background-color: #313244; /* Surface0 */
+    color: #cdd6f4;            /* Text */
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+#mpris.playing {
+    color: #a6e3a1; /* Green */
+}
+
+#mpris.paused {
+    color: #f9e2af; /* Yellow */
+}
+
+#mpris.stopped {
+    color: #f38ba8; /* Red */
 }
 

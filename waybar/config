@@ -12,14 +12,13 @@
         "custom/media",
         "sway/window"
     ],
-    "modules-center": [
-    ],
+    "modules-center": [],
     "modules-right": [
         "mpd",
         "idle_inhibitor",
+        "mpris",
         "pulseaudio",
         "network",
-        "backlight",
         "keyboard-state",
         "battery",
         "battery#bat2",
@@ -172,9 +171,8 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-
         // {essid} 
-        "format-wifi": "{signalStrength}% ", 
+        "format-wifi": "{signalStrength}% ",
         "format-ethernet": "{ipaddr}/{cidr} 󰈀",
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP) 󱘖",
@@ -215,6 +213,18 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "mpris": {
+        "format": "{player}: {artist} - {title}",
+        "format-playing": "<span font_desc='JetBrainsMono Nerd Font'>󰏤</span> {artist} - {title}",
+        "format-paused": "<span font_desc='JetBrainsMono Nerd Font'>󰐊</span> {artist} - {title}",
+        "tooltip-format": "{player}\n{title}",
+        "on-click": "playerctl play-pause",
+        "on-click-forward": "playerctl next",
+        "on-click-backward": "playerctl previous",
+        "on-scroll-up": "playerctl volume 0.05+",
+        "on-scroll-down": "playerctl volume 0.05-",
+        "max-length": 24
     },
     "custom/powermenu": {
         "format": " ⏻ ",
