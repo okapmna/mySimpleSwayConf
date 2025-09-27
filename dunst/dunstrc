@@ -1,0 +1,92 @@
+# ~/.config/dunst/dunstrc
+# Tema: Catppuccin Mocha
+
+[global]
+    monitor = 0
+    geometry = "300x5-30+20" # lebar x tinggi - kanan + atas
+    origin = top-right
+    offset = 30x50 # jarak dari tepi layar
+
+    # Tampilan dan nuansa
+    font = JetBrainsMono Nerd Font 10
+    format = "<b>%s</b>\n%b" # Judul tebal, lalu isi pesan
+    alignment = left
+    word_wrap = yes
+    ellipsize = middle
+    
+    # Warna dan transparansi
+    frame_width = 1
+    separator_height = 2
+    separator_color = frame
+    corner_radius = 5
+    
+    # Transparansi (0 = solid, 100 = transparan penuh)
+    # Gunakan 'dunst_transparency' jika memakai compositor seperti picom
+    # atau atur nilai alpha di kode warna (misal: #RRGGBBAA)
+    # Di sini kita akan menggunakan warna solid.
+
+    # Ikon
+    icon_position = left
+    max_icon_size = 32
+    # icon_path = /usr/share/icons/Papirus/48x48/devices/:/usr/share/icons/Papirus/48x48/apps/
+    icon_theme = Papirus-Dark
+    enable_recursive_icon_lookup = true
+    
+    # Lain-lain
+    sort = yes
+    indicate_hidden = yes
+    sticky_history = yes
+    history_length = 20
+    show_age_threshold = 60
+    ignore_newline = no
+    startup_notification = false
+    dmenu = /usr/bin/dmenu -p dunst:
+    browser = /usr/bin/firefox -new-tab
+    
+    # Jangan tutup notifikasi jika mouse berada di atasnya
+    mouse_leave_icon = false
+    mouse_move_event = do_nothing
+
+# Definisi warna berdasarkan palet Catppuccin Mocha
+[urgency_low]
+    background = "#1E1E2E"  # @base
+    foreground = "#CDD6F4"  # @text
+    frame_color = "#45475A" # @surface1
+    timeout = 5
+
+[urgency_normal]
+    background = "#1E1E2E"  # @base
+    foreground = "#CDD6F4"  # @text
+    frame_color = "#45475A" # @surface1
+    timeout = 10
+
+[urgency_critical]
+    background = "#1E1E2E"  # @base
+    foreground = "#CDD6F4"  # @text
+    frame_color = "#F38BA8" # @red
+    timeout = 0
+
+# Pengaturan khusus untuk progress bar
+# Dunst menggunakan warna dari 'foreground' di bawah [urgency_low]
+# atau 'highlight' jika didefinisikan untuk progress bar.
+# Untuk kontrol yang lebih baik, kita bisa mendefinisikan grup kustom.
+# Namun, cara paling sederhana adalah mengatur warna progress bar global.
+# Untuk Dunst versi baru, Anda bisa menentukannya di [global].
+# Jika tidak berhasil, 'highlight' adalah fallback yang baik.
+
+[global]
+    # ... (semua pengaturan global dari atas) ...
+
+    # Pengaturan Progress Bar
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+
+    # Warna untuk progress bar
+    # Menggunakan highlight agar tidak mengganggu warna teks utama
+    highlight = "#89B4FA" # @blue
+    
+[experimental]
+    # Beberapa pengaturan baru mungkin ada di sini tergantung versi dunst
