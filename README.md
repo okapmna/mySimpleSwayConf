@@ -71,7 +71,7 @@ The following packages are required for this setup to work correctly.
 
     Clone this repository
     ```bash
-    git clone https://github.com/YOUR-USERNAME/mySimpleSwayConf.git
+    git clone https://github.com/okapmna/mySimpleSwayConf.git
     ```
     Navigate into the directory
     ```bash
