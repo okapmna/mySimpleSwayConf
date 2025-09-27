@@ -26,7 +26,7 @@ include /etc/sway/config-vars.d/*
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/Pictures/wallpaper/1264414.jpg fill
+output * bg ~/Pictures/wallpaper/1283924.jpg fill
 #
 # Example configuration:
 #
@@ -221,14 +221,46 @@ include /etc/sway/config.d/*
 
 
 ## Looks
-
 # Remove window tittle
-default_border none
+# default_border none
+default_border pixel 2
 default_floating_border none
 
 # Window gaps
-gaps inner 6
+gaps inner 5
 gaps outer 3
+
+# Catppuccin Mocha
+set $mocha-base       #1E1E2E
+set $mocha-mantle     #181825
+set $mocha-crust      #11111B
+set $mocha-text       #CDD6F4
+set $mocha-blue       #89B4fA
+set $mocha-red        #F38BA8
+set $mocha-overlay0   #6C7086
+
+# Focussed Window
+# Border: blue, Background: Crust, Text: Text, Indicator: blue, Child Border: blue
+client.focused          $mocha-blue $mocha-crust $mocha-text $mocha-blue $mocha-blue
+
+# Unfocused window
+# Border: Overlay0, Background: Crust, Text: Text, Indicator: Overlay0, Child Border: Overlay0
+client.unfocused        $mocha-overlay0 $mocha-crust $mocha-text $mocha-overlay0 $mocha-overlay0
+
+# Inactive
+# Border: Overlay0 (agar tidak mengganggu), Background: Crust, Text: Text, Indicator: blue, Child Border: Overlay0
+client.focused_inactive $mocha-overlay0 $mocha-crust $mocha-text $mocha-blue $mocha-overlay0
+
+# Urgent
+# Border: Red, Background: Crust, Text: Text, Indicator: Red, Child Border: Red
+client.urgent           $mocha-red $mocha-crust $mocha-text $mocha-red $mocha-red
+
+# Placeholder (container kosong)
+# Border: Crust (atau biarkan gelap), Background: Crust, Text: Text, Indicator: Crust, Child Border: Crust
+client.placeholder      $mocha-crust $mocha-crust $mocha-text $mocha-crust $mocha-crust
+client.background       $mocha-crust
+
+
 
 exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr
 # exec --no-startup-id /usr/lib/xdg-desktop-portal-gtk
