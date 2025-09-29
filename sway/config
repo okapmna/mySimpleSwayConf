@@ -223,7 +223,7 @@ include /etc/sway/config.d/*
 ## Looks
 # Remove window tittle
 # default_border none
-default_border pixel 2
+default_border pixel 3
 default_floating_border none
 
 # Window gaps
@@ -259,6 +259,11 @@ client.urgent           $mocha-red $mocha-crust $mocha-text $mocha-red $mocha-re
 # Border: Crust (atau biarkan gelap), Background: Crust, Text: Text, Indicator: Crust, Child Border: Crust
 client.placeholder      $mocha-crust $mocha-crust $mocha-text $mocha-crust $mocha-crust
 client.background       $mocha-crust
+
+# Remove border for google chrome
+for_window [app_id="google-chrome"] border none
+# Contoh jika YouTube Music memiliki app_id spesifik (ganti dengan app_id yang sebenarnya)
+for_window [app_id="YouTube Music"] border none
 
 
 
