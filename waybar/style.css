@@ -28,13 +28,16 @@
 
 * {
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-family: "JetBrainsMono Nerd Font", sans-serif;
     font-size: 14px;
     min-height: 0;
 }
 
 #waybar {
+    border-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     background-color: rgba(30, 30, 46, 0.900);
     color: @text;
     transition-property: background-color;
@@ -59,9 +62,8 @@
 #idle_inhibitor,
 #scratchpad,
 #mpd,
-#keyboard-state,
 #mpris,
-
+#keyboard-state
 
 
 #sway-language {
@@ -177,21 +179,24 @@
 
 
 #mpris {
-    background-color: #313244; /* Surface0 */
-    color: #cdd6f4;            /* Text */
+    background-color: #313244;
+    /* Surface0 */
+    color: #cdd6f4;
+    /* Text */
     padding: 0 10px;
-    font-weight: bold;
 }
 
 #mpris.playing {
-    color: #a6e3a1; /* Green */
+    color: #a6e3a1;
+    /* Green */
 }
 
 #mpris.paused {
-    color: #f9e2af; /* Yellow */
+    color: #f9e2af;
+    /* Yellow */
 }
 
 #mpris.stopped {
-    color: #f38ba8; /* Red */
+    color: #f38ba8;
+    /* Red */
 }
-

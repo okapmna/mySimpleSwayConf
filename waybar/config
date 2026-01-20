@@ -231,4 +231,5 @@
         "tooltip": "Power menu",
         "on-click": "~/.config/wofi/power-menu.sh"
     }
+
 }
