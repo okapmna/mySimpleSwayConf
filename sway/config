@@ -26,11 +26,21 @@ include /etc/sway/config-vars.d/*
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/Pictures/wallpaper/1283924.jpg fill
+output * bg ~/Pictures/wallpapers/crane.png fill
 #
 # Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+
+
+	workspace 1 output eDP-1
+	workspace 2 output eDP-1
+	workspace 3 output eDP-1
+	workspace 4 output eDP-1
+	workspace 5 output eDP-1
+	workspace 6 output eDP-1
+	workspace 7 output eDP-1
+	workspace 8 output eDP-1
+	workspace 9 output HDMI-A-2
+	workspace 10 output HDMI-A-2
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -39,8 +49,8 @@ output * bg ~/Pictures/wallpaper/1283924.jpg fill
 # Example configuration:
 #
 exec swayidle -w \
-          timeout 300 'swaylock -f -c 000000' \
-          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+          timeout 900 'swaylock -f -c 000000' \
+          timeout 1800 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
           before-sleep 'swaylock -f -c 000000'
 
 # This will lock your screen after 300 seconds of inactivity, then turn off
@@ -223,7 +233,7 @@ include /etc/sway/config.d/*
 ## Looks
 # Remove window tittle
 # default_border none
-default_border pixel 3
+default_border pixel 2
 default_floating_border none
 
 # Window gaps
@@ -260,10 +270,6 @@ client.urgent           $mocha-red $mocha-crust $mocha-text $mocha-red $mocha-re
 client.placeholder      $mocha-crust $mocha-crust $mocha-text $mocha-crust $mocha-crust
 client.background       $mocha-crust
 
-# Remove border for google chrome
-for_window [app_id="google-chrome"] border none
-# Contoh jika YouTube Music memiliki app_id spesifik (ganti dengan app_id yang sebenarnya)
-for_window [app_id="YouTube Music"] border none
 
 
 
