@@ -1,7 +1,0 @@
-{
-    "colorscheme": "catppuccin-mocha-transparent",
-    "lsp": {
-        "pylsp": "pylsp",
-        "pylsp-all": "pylsp"
-    }
-}
