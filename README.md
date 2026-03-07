@@ -62,7 +62,7 @@ The following packages are required for this setup to work correctly.
 
     `sway swaybg swayidle swaylock waybar wofi foot kitty`
     
-    `brightnessctl xdg-desktop-portal-wlr flameshot fastfetch neovim micro swayimg`
+    `brightnessctl xdg-desktop-portal-wlr flameshot fastfetch pavucontrol micro swayimg`
     
     `ttf-jetbrains-mono-nerd orchis-gtk-theme-git tela-icon-theme-git`
 
