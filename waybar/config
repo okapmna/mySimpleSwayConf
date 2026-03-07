@@ -22,6 +22,8 @@
         "keyboard-state",
         "battery",
         "battery#bat2",
+        "cpu",
+        "memory",
         "clock",
         "tray",
         "custom/powermenu"
@@ -98,9 +100,9 @@
     },
     "idle_inhibitor": {
         "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
+        "format-icons": { 
+            "activated": " ",
+            "deactivated": " "
         }
     },
     "tray": {
@@ -231,5 +233,4 @@
         "tooltip": "Power menu",
         "on-click": "~/.config/wofi/power-menu.sh"
     }
-
 }

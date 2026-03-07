@@ -28,7 +28,7 @@
 
 * {
     border: none;
-    border-radius: 8px;
+    border-radius: 2px;
     font-family: "JetBrainsMono Nerd Font", sans-serif;
     font-size: 14px;
     min-height: 0;
@@ -36,9 +36,9 @@
 
 #waybar {
     border-radius: 0px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    background-color: rgba(30, 30, 46, 0.900);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgba(30, 30, 46, 0.800);
     color: @text;
     transition-property: background-color;
     transition-duration: .5s;
@@ -105,7 +105,7 @@
 }
 
 #clock {
-    background-color: @surface1;
+    background-color: @surface0;
 }
 
 #network {
@@ -119,11 +119,13 @@
 }
 
 #cpu {
-    color: @green;
+	background-color: @sapphire;
+    color: @base;
 }
 
 #memory {
-    color: @teal;
+	background-color: @teal;
+    color: @base;
 }
 
 #temperature {
@@ -148,13 +150,11 @@
 #battery.warning {
     color: @base;
     background-color: @peach;
-    /* Menggunakan lavender sebagai pengganti warna kuning/peach */
 }
 
 #battery.critical {
     color: @base;
     background-color: @rosewater;
-    /* Menggunakan biru sebagai pengganti warna merah */
     animation-name: blink;
     animation-duration: 0.4s;
     animation-timing-function: linear;
