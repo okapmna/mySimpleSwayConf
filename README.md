@@ -53,9 +53,22 @@ The install script will automatically detect your distribution and install packa
 
 If you prefer to install packages manually:
 
-- **Ubuntu/Debian/Mint**: `sudo apt install sway swaybg swayidle swaylock waybar wofi foot kitty brightnessctl xdg-desktop-portal-wlr flameshot fastfetch pavucontrol micro swayimg dmenu wmenu`
-- **Fedora**: `sudo dnf install sway swaybg swayidle swaylock waybar wofi foot kitty brightnessctl xdg-desktop-portal-wlr flameshot fastfetch pavucontrol micro swayimg dmenu wmenu`
-- **Arch**: `sudo pacman -S sway swaybg swayidle swaylock waybar wofi foot kitty brightnessctl xdg-desktop-portal-wlr flameshot fastfetch pavucontrol micro swayimg dmenu wmenu`
+**Ubuntu/Debian/Mint:**
+```bash
+sudo apt install sway swaybg swayidle swaylock waybar wofi foot kitty brightnessctl xdg-desktop-portal-wlr flameshot fastfetch pavucontrol micro swayimg dmenu wmenu
+```
+
+**Fedora:**
+```bash
+sudo dnf install sway swaybg swayidle swaylock waybar wofi foot kitty brightnessctl xdg-desktop-portal-wlr flameshot fastfetch pavucontrol micro swayimg dmenu wmenu
+```
+
+**Arch:**
+```bash
+sudo pacman -S sway swaybg swayidle swaylock waybar wofi foot kitty brightnessctl xdg-desktop-portal-wlr flameshot fastfetch pavucontrol micro swayimg dmenu wmenu
+```
 
 Additional themes (install manually):
-`ttf-jetbrains-mono-nerd orchis-gtk-theme tela-icon-theme papirus-icon-theme`
+```bash
+ttf-jetbrains-mono-nerd orchis-gtk-theme tela-icon-theme papirus-icon-theme
+```
