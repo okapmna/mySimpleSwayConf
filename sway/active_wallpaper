@@ -1,1 +1,1 @@
-exec_always /home/pmna/.local/bin/run-mpvpaper.sh '/home/pmna/Videos/livewall/frieren-starry-night-flower.mp4'
+exec_always $HOME/.local/bin/run-mpvpaper.sh '$HOME/Videos/livewall/frieren-starry-night-flower.mp4'
