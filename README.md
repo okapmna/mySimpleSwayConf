@@ -10,14 +10,6 @@ A collection of my personal dotfiles for a minimalist, and functional Sway setup
 - **Terminal**: `Foot` & `Kitty`
 - **Theme**: `Catppuccin Mocha`
 
-## Supported Distributions
-
-| Distro | Package Manager | Status |
-|--------|----------------|--------|
-| Ubuntu / Debian / Mint | `apt` | Full support |
-| Fedora / RHEL | `dnf` | Full support |
-| Arch / Manjaro / EndeavourOS | `pacman` | Full support |
-
 ## Components & Dependencies
 
 The following packages are required for this setup to work correctly.
